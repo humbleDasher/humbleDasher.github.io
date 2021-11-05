@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Index of HowTos</title>
+	<title>clone a remote github repo and sync it using a personal access token</title>
 	<meta name='Generator' content='Zim 0.74.2'>
 	<style type='text/css'>
 		a          { text-decoration: none      }
@@ -40,11 +40,11 @@
 
 <!-- Header -->
 <div class='header'>
-	[ <span class='insen'>Prev</span> ]
+	[ <a href='../github.html'>Prev</a> ]
 
-	[ <a href='#index'>Index</a> ]
+	[ <a href='../../index.html'>Index</a> ]
 
-	[ <span class='insen'>Next</span> ]
+	[ <a href='./create_personal_access_token.html'>Next</a> ]
 </div>
 
 <hr />
@@ -53,45 +53,44 @@
 
 <div class='pages'>
 	<div class='heading'>
-	<h1>Index of HowTos <a name='index'></a></h1>
+	<h1>clone a remote github repo and sync it using a personal access token <a name='index:github:clone a remote github repo and sync it using a personal access token'></a></h1>
 	</div>
 
 	<div class='content'>
-	<ul>
-<li><a href="#index" title="index" class="page">index</a>
-<ul>
-<li><a href="./index/git.html" title="git" class="page">git</a>
-<ul>
-<li><a href="./index/git/change_git_username.html" title="change git username" class="page">change git username</a></li>
-<li><a href="./index/git/connect_local_folder_to_git.html" title="connect local folder to git" class="page">connect local folder to git</a></li>
-<li><a href="./index/git/libsecret.html" title="libsecret" class="page">libsecret</a></li>
-<li><a href="./index/git/manage_remote_repos.html" title="manage remote repos" class="page">manage remote repos</a></li>
-<li><a href="./index/git/use_gnome_keyring_as_git_credential_helper.html" title="use gnome keyring as git credential helper" class="page">use gnome keyring as git credential helper</a></li>
-</ul>
+	<p>
+Created Friday 05 November 2021
+</p>
+
+<p>
+<b>How to clone a remote github repo to your local machine and sync it using a personal access token:</b><br>
+<ol type="1" start="1">
+<li>Setup connecting to github via ssh using these instructions: <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh" title="https://docs.github.com/en/authentication/connecting-to-github-with-ssh" class="https">https://docs.github.com/en/authentication/connecting-to-github-with-ssh</a></li>
+<li>Create a personal access token using these instructions: <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" title="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" class="https">https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token</a></li>
+<li>Clone the github repo using the HTTPS method described here: <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository" title="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository" class="https">https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository</a>
+<ol type="a" start="1">
+<li>To use the instructions of 3, you MUST create as least one file in the repo, so choose to add a README file during the repo creation process.</li>
+</ol>
 </li>
-<li><a href="./index/github.html" title="github" class="page">github</a>
-<ul>
-<li><a href="./index/github/clone_a_remote_github_repo_and_sync_it_using_a_personal_access_token.html" title="clone a remote github repo and sync it using a personal access token" class="page">clone a remote github repo and sync it using a personal access token</a></li>
-<li><a href="./index/github/create_personal_access_token.html" title="create personal access token" class="page">create personal access token</a></li>
-</ul>
+<li>Make at least one change to your local copy of the remote repo.</li>
+<li>Push the change to the remote repo, as described here: <a href="https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository" title="https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository" class="https">https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository</a>
+<ol type="a" start="1">
+<li>When you enter the "git push origin main" command in a terminal, you will be prompted for your github username and your personal access token.</li>
+</ol>
 </li>
-<li><a href="./index/ssh.html" title="ssh" class="page">ssh</a>
-<ul>
-<li><a href="./index/ssh/list_ssh_keys.html" title="list ssh keys" class="page">list ssh keys</a></li>
-</ul>
-</li>
-<li><a href="./index/sudo.html" title="sudo" class="page">sudo</a>
-<ul>
-<li><a href="./index/sudo/add_user_to_sudoers_file.html" title="add user to sudoers file" class="page">add user to sudoers file</a></li>
-</ul></li>
-</ul></li>
-</ul>
+<li>If you dont want to enter your username and token every time, use libsecret and gnome-keyring to store them securely: <a href="../git/use_gnome_keyring_as_git_credential_helper.html" title="git:use gnome keyring as git credential helper" class="page">git:use gnome keyring as git credential helper</a></li>
+</ol>
+</p>
 
 	</div>
 
 	<br />
 
 	<div class='page-footer'>
+		<b>Backlinks:</b>
+
+		<a href='../github.html'>index:github</a>
+
+		<br /><br />
 
 	</div>
 
